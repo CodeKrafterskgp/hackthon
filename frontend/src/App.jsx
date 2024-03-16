@@ -1,5 +1,5 @@
 // import Leader from './components/leader-board/Leader';
-// import Login from './components/Login/Login';
+import Login from './components/Login/Login';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
@@ -15,6 +15,7 @@ const App = () => {
 
           <Routes>
             <Route exact path="/" element={<Landing />}></Route>
+            <Route exact path="/login" element={<Login />}></Route>
           </Routes>
 
           <Footer />
