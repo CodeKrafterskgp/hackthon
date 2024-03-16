@@ -1,72 +1,79 @@
 .loginpg {
-    height: 72vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    border-radius: 20px;
-    background-color: #f1f1f1;
+  height: 72vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
 }
-#namelogin{
-    color: black;
+#namelogin {
+  color: black;
 }
 .login-form {
-    width: 300px;
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
 }
 
 .form-group label {
-    text-align: left;
-    width: 100%;
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-    font-weight: bold;
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
 }
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-button[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+button[type='submit'] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-button[type="submit"]:hover {
-    background-color: #006705;
+button[type='submit']:hover {
+  background-color: #006705;
 }
 
-.form-group.remember-me {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.form-group .remember-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-group input {
+  color: #000;
 }
 
+.succesLogin a {
+  text-decoration: none;
+  color: #006705;
+}
