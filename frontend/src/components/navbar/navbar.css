@@ -19,7 +19,8 @@ body {
     width: auto;
     display: flex;
     flex-direction: row;
-    background-color: #19172a;
+    /* background-color: #19172a; */
+    background-color: #020A1C;
     /* background-color: #201f31; */
     min-height: 90px;
     flex-wrap: wrap;
@@ -101,9 +102,14 @@ body {
 .NavigatingOptions.open li a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 1;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
-    padding: 0px 20px;
+    padding: 0px 25px 0px 0px;
+}
+
+.NavigatingOptions li a:hover,
+.NavigatingOptions.open li a:hover {
+    color: red;
 }
 
 /* <<<<<.................Navigation Ends..............>>> */
@@ -112,6 +118,7 @@ body {
 .Searchcontainer.open {
     display: block;
 }
+
 /* color: #9b3a57; */
 .SearchBar {
     display: flex;
@@ -137,6 +144,15 @@ body {
     cursor: pointer;
 }
 
+.SearchBar p:hover {
+    background-color: #9c1f45;
+}
+
+.SearchBar p a:hover {
+    color: rgb(180, 157, 157);
+
+}
+
 #loginimg {
     border-radius: 10px;
     width: 30px;
@@ -149,6 +165,10 @@ body {
     background-color: #9b3a57;
     padding-right: 5px;
 
+}
+
+#loginimg {
+    background-color: #9c1f45;
 }
 
 

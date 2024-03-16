@@ -10,7 +10,10 @@ const Landing = () => {
     <div className="Landing">
       <div className="bio1">
         <div>
-          EZ my Learn offers innovative features like YouTube integration, Chat
+          <span>
+          Ez My Learn 
+          </span>
+          offers innovative features like YouTube integration, Chat
           GPT for instant assistance, and Google Meet for virtual classes. With
           note-taking, multiple chat options, attendance tracking, and a dynamic
           leaderboard, learning becomes engaging. Teachers can organize quizzes

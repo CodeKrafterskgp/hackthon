@@ -15,28 +15,44 @@
     flex-direction: row;
     height: 50vh;
     align-items: center;
-    /* background-image: url('./Group 2.png'); */
+    background-image: url('./Group 2Lightbg2.png');
     /* background-clip: ; */
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 .bio1 div {
     padding-left: 5vw;
     width: 30vw;
+    letter-spacing: 1px;
+    line-height: 19px;
+    text-align: justify;
 }
-
+.bio1 div span {
+    color:rgb(214, 118, 118);
+    padding-right: 5px;
+    font-size: 25px;
+   
+}
+.bio1 div span:hover{
+    color:rgb(193, 82, 82);
+}
 .icons {
     width: 80vw;
     margin: auto;
     border-radius: 15px;
-    background-color: #2B2A3C;
+    background-color: #020A1C;
     height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-
+.ic1 img{
+    transition: transform 0.3s ease;
+}
+.ic1 img:hover{
+    transform: scale(1.12);
+}
 
 .icons div img {
     border-radius: 10px;

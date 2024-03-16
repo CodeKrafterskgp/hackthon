@@ -1,10 +1,9 @@
 .footer {
-    background-color: #2b2a3cfe;
-    background-color: black;
+    background-color: #020A1C;
     display: flex;
     flex-direction: row;
     height: 8.45vh;
-    /* margin: 0vw 5vw 0vw 5vw; */
+    padding: 0vw 3vw 0vw 3vw;
     margin-top: 1vh;
     align-items: center;
 

@@ -3,18 +3,16 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="bl1">
-        <p>9012160141</p>
-        <p>krsadarsh@gmail.com</p>
+        <p>902160151</p>
+        <p>CodeKrafters@gmail.com</p>
       </div>
       <div className="bl1">
-        <p>
-          ABout us : Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Eveniet voluptas ut labore ullam quasi at quia soluta temporibus modi
-          illo!
+        <p id='biofooter1'>
+          Established in 2024. Moto of EaZ My LEarn Platform is to bring all necessary study platform under one roof . Learning Made Simpler.......
         </p>
       </div>
       <div className="bl2">
-        <p>Copyright</p>
+        <p>Copyright 	&#169; 2024</p>
       </div>
     </div>
   );

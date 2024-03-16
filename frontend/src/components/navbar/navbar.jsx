@@ -42,7 +42,7 @@ function Navbar() {
           <NavigationItems name="Leaderboard" />
           <NavigationItems name="Chat" />
           <NavigationItems name="Quiz" />
-          <NavigationItems name="About-Us" />
+          <NavigationItems name="About-Us" link="/aboutus"/>
         </div>
       </div>
 
