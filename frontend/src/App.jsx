@@ -7,6 +7,10 @@ import Footer from './components/footer/footer';
 import Landing from './components/Landing/landing';
 import Aboutus from './components/aboutus/aboutus';
 import Subjects from './components/subjects/subjects';
+import CPT from './components/chapters/CPT';
+import BE from './components/chapters/BE';
+import THERMO from './components/chapters/THERMO';
+import AGBT from './components/chapters/ABGT';
 
 const App = () => {
   return (
@@ -21,10 +25,15 @@ const App = () => {
             <Route exact path="/" element={<Landing />}></Route>
 
             <Route exact path="/login" element={<Login />}></Route>
-            {/* /courses */}
+            
             <Route exact path="/aboutus" element={<Aboutus />}></Route>
 
             <Route exact path="/courses" element={<Subjects />}></Route>
+
+            <Route exact path="/AGBT" element={<AGBT/>}></Route>
+            <Route exact path="/THERMO" element={<THERMO/>}></Route>
+            <Route exact path="/BE" element={<BE/>}></Route>
+            <Route exact path="/CPT" element={<CPT/>}></Route>
 
 
           </Routes>

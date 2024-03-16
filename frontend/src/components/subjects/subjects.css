@@ -9,10 +9,6 @@
 
 }
 
-/* * {
-    color: rgb(181, 87, 87);
-} */
-
 .subbar {
     display: flex;
     flex-direction: row;
@@ -32,8 +28,7 @@
 
 .subject1 {
     height: 68vh;
-    /* border: 3px solid black; */
-    border-bottom-left-radius: 10px;
+      border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -43,9 +38,7 @@
 }
 
 .subicon {
-    /* border: 3px solid black; */
-    /* margin-right: 4vw; */
-    /* margin-left: 4vw; */
+  
     width: 11vw;
     margin-top: 1vw;
     padding: 0px 8vw;
