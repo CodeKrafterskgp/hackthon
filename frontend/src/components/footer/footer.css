@@ -1,0 +1,15 @@
+.footer {
+    background-color: #2b2a3cfe;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    height: 8.45vh;
+    /* margin: 0vw 5vw 0vw 5vw; */
+    margin-top: 1vh;
+    align-items: center;
+
+}
+
+.footer div {
+    padding: 0vw 3vw;
+}

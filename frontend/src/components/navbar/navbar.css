@@ -1,0 +1,296 @@
+* {
+    color: white;
+    /* background-color: #020019; */
+    /* overflow: hidden; */
+    /* overflow-y:hidden; */
+}
+
+body {
+    /* height: 1267px; */
+    padding: 0px;
+    margin: 0px;
+    /* overflow: hidden; */
+}
+
+.navbar,
+.navbar.open {
+    /* width: 100vw; */
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #19172a;
+    /* background-color: #201f31; */
+    min-height: 90px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* <<<<............title css Starts............>>>> */
+.TitleOfPlatform {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    height: initial;
+    align-items: center;
+    margin-left: 1.5vw;
+    min-width: 20vw;
+}
+
+.TiltleOfPlatforms {
+    display: block;
+}
+
+.TitleOfPlatforms.open {
+    display: block;
+}
+
+#name1 {
+    color: #af667c;
+    font-weight: 800;
+    font-size: 49.2px;
+    margin-right: 5px;
+}
+
+#name2 {
+    font-weight: 800;
+    color: #bd8394;
+    font-size: 49.2px;
+    margin-right: 5px;
+}
+
+#name3 {
+    color: #af667c;
+    font-weight: 800;
+    font-size: 49.2px;
+}
+
+#After600px {
+    display: none;
+}
+
+/* <<<<.........title css ends.........>>>> */
+
+
+
+/* <<<<.........  NAVIGATION STARTS.........>>>> */
+
+.Navigation {
+    display: block;
+    min-width: 26vw;
+    margin-left: auto;
+}
+
+.NavigatingOptions,
+.NavigatingOptions.open {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* min-width: 26vw;
+    margin-left: auto; */
+}
+
+.NavigatingOptions li,
+.NavigatingOptions.open li {
+    list-style: none;
+}
+
+.NavigatingOptions li a,
+.NavigatingOptions.open li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+/* <<<<<.................Navigation Ends..............>>> */
+
+.Searchcontainer,
+.Searchcontainer.open {
+    display: block;
+}
+/* color: #9b3a57; */
+.SearchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100px;
+    margin-right: 1.5vw;
+    border-radius: 10px;
+    background-color: #9b3a57;
+}
+
+.SearchBar p {
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: #9b3a57;
+    border: 0px solid white;
+    /* border-right: 2px solid grey; */
+    cursor: pointer;
+}
+
+#loginimg {
+    border-radius: 10px;
+    width: 30px;
+    height: 40px;
+    background-image: url('./images/login1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 0px solid white;
+    background-color: #9b3a57;
+    padding-right: 5px;
+
+}
+
+
+/* <..........Hamburger Css ................> */
+#hambutton {
+    display: none;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 8vw;
+}
+
+.line {
+    width: 50px;
+    height: 6px;
+    background: #eeeeee;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open .line:nth-child(1) {
+    transform: translateY(15.5px) rotate(45deg);
+}
+
+.hamburger.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+    transform: translateY(-15.5px) rotate(-45deg);
+}
+
+.hamburger.open {
+    position: fixed;
+    left: 82vw;
+    top: 15px;
+}
+
+/* <<<............hamburger css ends...............>>>> */
+
+
+
+
+
+
+@media only screen and (max-width:665px) {
+    .navbar.open {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+
+
+    /* <..........Hamburger Css ................> */
+    #hambutton {
+        display: flex;
+    }
+
+    /* <<<............hamburger css ends...............>>>> */
+
+
+
+
+    /* <<<<.........title css Starts.........>>>> */
+    .TitleOfPlatforms.open {
+        display: none;
+    }
+
+    #After600px {
+        display: flex;
+    }
+
+    #Before600px {
+        display: none;
+    }
+
+    /* <<<<.........title css Ends.........>>>> */
+
+
+
+    /* <<<<.........NAVIGATION STARTS.........>>>> */
+
+    .Navigation {
+        display: none;
+    }
+
+    .Navigation {
+
+        min-width: 20vw;
+        margin: auto;
+    }
+
+    .Navigation.open {
+        margin-bottom: 0px;
+        display: block;
+    }
+
+    .NavigatingOptions.open {
+        margin-top: 7vh;
+        margin-bottom: 5vh;
+        flex-direction: column;
+    }
+
+    .NavigatingOptions.open li {
+        padding: 20px;
+    }
+
+    /* <<<<.........navigation Ends...........>>>>> */
+
+
+
+    /* <<<<<.............Searach Starts ...........>>>>>>>>> */
+
+    .Searchcontainer {
+        display: none;
+        margin-top: auto;
+        margin-bottom: 40vh;
+        margin: auto;
+    }
+
+    .Searchcontainer.open {
+        display: block;
+        margin-top: 0px;
+    }
+
+    /* <<<<<.............Searach Ends ...........>>>>>>>>> */
+}
+
+@media only screen and (max-width:1064px) {
+    .Navigation {
+        margin: auto;
+    }
+
+    .Searchcontainer {
+        margin-left: auto;
+    }
+
+}
