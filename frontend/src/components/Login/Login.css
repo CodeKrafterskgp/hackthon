@@ -1,5 +1,5 @@
 .loginpg {
-    height: 100vh;
+    height: 72vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,9 @@
     border-radius: 20px;
     background-color: #f1f1f1;
 }
-
+#namelogin{
+    color: black;
+}
 .login-form {
     width: 300px;
     padding: 40px;

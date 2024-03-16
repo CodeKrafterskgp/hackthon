@@ -18,7 +18,7 @@ const Login = () => {
   return (
     <div className="loginpg">
       <div className="login-form">
-        <h2>LOGIN</h2>
+        <h2 id='namelogin'>LOGIN</h2>
         <br></br>
         <div className="form-group">
           <label htmlFor="username">User Id:</label>
