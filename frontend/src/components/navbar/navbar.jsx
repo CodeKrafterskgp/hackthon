@@ -38,10 +38,10 @@ function Navbar() {
       <div className={`Navigation ${isOpen ? 'open' : ''}`}>
         <div className={`NavigatingOptions ${isOpen ? 'open' : ''}`}>
           <NavigationItems name="Home" link="/" />
-          <NavigationItems name="My-Courses" />
-          <NavigationItems name="Leaderboard" />
-          <NavigationItems name="Chat" />
-          <NavigationItems name="Quiz" />
+          <NavigationItems name="My-Courses" link="/courses"/>
+          <NavigationItems name="Leaderboard" link="/"/>
+          <NavigationItems name="Chat" link="/"/>
+          <NavigationItems name="Quiz" link="/"/>
           <NavigationItems name="About-Us" link="/aboutus"/>
         </div>
       </div>

@@ -1,0 +1,80 @@
+.subject {
+    height: 74.38vh;
+    border: 1px black solid;
+    margin: 1vw 5vw 0vw 5vw;
+    background-color: rgb(221, 214, 216);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* * {
+    color: rgb(181, 87, 87);
+} */
+
+.subbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 3px solid rgb(149, 129, 133);
+    font-size: 1.3vw;
+    font-weight: bolder;
+    height: 6vh;
+    align-items: center;
+}
+
+.subbar div {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9b3a57;
+}
+
+.subject1 {
+    height: 68vh;
+    /* border: 3px solid black; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.subicon {
+    /* border: 3px solid black; */
+    /* margin-right: 4vw; */
+    /* margin-left: 4vw; */
+    width: 11vw;
+    margin-top: 1vw;
+    padding: 0px 8vw;
+
+}
+
+.subicon a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.subicon a img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0px 10px 20px rgb(196, 163, 163), 10px 0px 20px rgb(192, 149, 149), -10px 0px 20px rgb(184, 146, 146);
+    margin: auto;
+}
+
+.subicon a img:hover {
+    transform: scale(1.08);
+
+}
+
+.subicon a p {
+    margin-top: 0.8vw;
+    font-size: 20px;
+    font-weight: 900;
+    color: #9b3a57;
+}
