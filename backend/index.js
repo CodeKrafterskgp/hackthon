@@ -40,12 +40,20 @@ function getUsers(name, pass) {
   });
 }
 
-let currentUser = { status: null };
-currentUser = app.post('/api/pp', async (req, res) => {
+let currentUser = null;
+app.post('/api/pp', async (req, res) => {
   console.log(req.body);
-  const newuser = getUsers(req.body.name, req.body.pass);
-  newuser.save();
-  return newuser;
+  currentUser = getUsers(req.body.name, req.body.pass);
+  currentUser.save();
+  return currentUser;
 });
 
-console.log(currentUser);
+app.get('/api/loginstatus', async (req, res) => {
+  if (currentUser == null) {
+    res.send(false);
+    console.log('f');
+  } else {
+    res.send(true);
+    console.log('t');
+  }
+});

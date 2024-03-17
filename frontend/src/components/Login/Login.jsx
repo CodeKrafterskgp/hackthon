@@ -18,7 +18,7 @@ const Login = () => {
     });
     setIsLogedin(<AfterLoginStuff />);
   };
-  // reqq();
+
   return (
     <div className="loginpg">
       <div className="login-form">
@@ -61,5 +61,4 @@ function AfterLoginStuff() {
     </div>
   );
 }
-
 export default Login;
