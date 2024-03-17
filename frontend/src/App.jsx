@@ -23,25 +23,26 @@ import BE2 from './components/chapters/BE/BE2';
 import BE3 from './components/chapters/BE/BE3';
 import BE4 from './components/chapters/BE/BE4';
 
+import Chat from './components/chat/Chat';
+
 const App = () => {
   return (
     <Router>
-
       <div className="App">
         <div className="bg2">
-
           <Navbar />
 
           <Routes>
             <Route exact path="/" element={<Landing />}></Route>
 
             <Route exact path="/login" element={<Login />}></Route>
-            
+
             <Route exact path="/aboutus" element={<Aboutus />}></Route>
 
             <Route exact path="/courses" element={<Subjects />}></Route>
             <Route exact path="/leader" element={<Leader/>}></Route>
 
+<<<<<<< HEAD
             <Route exact path="/AGBT" element={<AGBT/>}></Route>
             <Route exact path="/THERMO" element={<THERMO/>}></Route>
             <Route exact path="/BE" element={<BE/>}></Route>
@@ -60,13 +61,17 @@ const App = () => {
 
             <Route exact path="/ACH4" element={<AGBT4/>}></Route>
             <Route exact path="/BCH4" element={<BE4/>}></Route>
+=======
+            <Route exact path="/AGBT" element={<AGBT />}></Route>
+            <Route exact path="/THERMO" element={<THERMO />}></Route>
+            <Route exact path="/BE" element={<BE />}></Route>
+            <Route exact path="/CPT" element={<CPT />}></Route>
+>>>>>>> 8e4d757a3c0e2d29c0f2b72a800fdf0d9d22826f
           </Routes>
 
           <Footer />
-
         </div>
       </div>
-
     </Router>
   );
 };
