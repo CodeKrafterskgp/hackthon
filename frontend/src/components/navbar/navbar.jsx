@@ -1,6 +1,6 @@
 import './navbar.css';
-import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +9,32 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const Nav1 = [
+    { name: 'Home', r: '/' },
+    { name: 'My-Courses', r: '/courses' },
+    { name: 'Leaderboard', r: '/' },
+    { name: 'Chat', r: '/' },
+    { name: 'Quiz', r: '/' },
+    { name: 'About-Us', r: '/aboutus' },
+  ];
+
+  const Nav2 = [
+    { name: 'Home', r: '/' },
+    { name: 'About-Us', r: '/aboutus' },
+  ];
+  const [diffNav, setDiffNav] = useState(Nav1);
+
+  const navSetter = () => {
+    axios.get('/api/loginstatus').then((response) => {
+      if (response.data == true) {
+        setDiffNav(Nav2);
+      } else {
+        setDiffNav(Nav1);
+      }
+    });
+  };
+
+  // useEffect(navSetter);
   return (
     <div className={`navbar ${isOpen ? 'open' : ''}`}>
       <div className={`TitleOfPlatforms ${isOpen ? 'open' : ''}`}>
@@ -37,12 +63,9 @@ function Navbar() {
 
       <div className={`Navigation ${isOpen ? 'open' : ''}`}>
         <div className={`NavigatingOptions ${isOpen ? 'open' : ''}`}>
-          <NavigationItems name="Home" link="/" />
-          <NavigationItems name="My-Courses" link="/courses"/>
-          <NavigationItems name="Leaderboard" link="/"/>
-          <NavigationItems name="Chat" link="/"/>
-          <NavigationItems name="Quiz" link="/"/>
-          <NavigationItems name="About-Us" link="/aboutus"/>
+          {diffNav.map((items, k) => (
+            <NavigationItems name={items.name} link={items.r} key={k} />
+          ))}
         </div>
       </div>
 
@@ -54,7 +77,9 @@ function Navbar() {
 
         <button className={`SearchBar ${isOpen ? 'open' : ''}`}>
           <p>
-            <a href="/login">LOGIN</a>
+            <a href="/login" onClick={navSetter}>
+              LOGIN
+            </a>
           </p>
           <div id="loginimg"></div>
         </button>

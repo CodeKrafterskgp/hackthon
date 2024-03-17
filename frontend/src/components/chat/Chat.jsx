@@ -1,38 +1,71 @@
 import attachment from './images/attachment.png';
+import axios from 'axios';
 
 import './chat.css';
+import { useState } from 'react';
+
+function inpput() {
+  let val = document.getElementById('fileInput').value;
+  document.getElementById('fileInput').value = ' ';
+  return val;
+}
 
 const Chat = () => {
+  // const [newchat, setNewchat] = useState();
+  const sendMsg = () => {
+    axios({
+      method: 'post',
+      url: '/api/pp',
+      data: {
+        id: 'user',
+        msg: inpput(),
+      },
+    });
+  };
+
+  // const [msg, setMsg] = useState([{}]);
+  // const chats = () => {
+  //   axios
+  //     .get('app/chats')
+  //     .then((res) => {
+  //       setMsg(res.data);
+  //       console.log(res);
+  //     })
+  //     .catch((err) => {
+  //       console.log('Error::', err);
+  //     });
+  // };
+  // useEffect(chats, []);
+
+  const [cuser, setCuser] = useState('none');
+
+  const user = () => {
+    axios
+      .get('/api/getuser')
+      .then((res) => {
+        setCuser(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log('Error::', err);
+      });
+  };
+  user();
+
   return (
     <div className="chat-container">
       <div className="chat-messages">
-        <SentMsg />
-        <ResMsg />
-        <ResMsg />
-        <SentMsg />
-        <SentMsg />
-        <ResMsg />
-        <SentMsg />
-        <ResMsg />
-        <ResMsg />
-        <ResMsg />
-        <SentMsg />
-        <SentMsg />
-        <ResMsg />
-        <SentMsg />
-        <ResMsg />
         <ResMsg />
         <ResMsg />
       </div>
       <div className="chat-input">
-        <input type="text" placeholder="Type your message..." />
+        <input type="text" placeholder="Type your message..." id="fileInput" />
         <img
           className="attachment-icon"
           src={attachment}
           alt="Attachment Icon"
         />
-        <input type="file" id="fileInput" style={{ display: 'none' }} />
-        <button>Send</button>
+        <button onClick={sendMsg}>Send</button>
       </div>
     </div>
   );

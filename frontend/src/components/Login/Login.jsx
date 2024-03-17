@@ -12,10 +12,18 @@ const Login = () => {
       url: '/api/pp',
       data: {
         name: document.getElementById('username').value,
-        // email: 'willi.gmail.com',
         pass: document.getElementById('password').value,
       },
     });
+
+    axios
+      .post('/api/pp', {
+        name: document.getElementById('username').value,
+        pass: document.getElementById('password').value,
+      })
+      .then((res) => {
+        console.log(res);
+      });
     setIsLogedin(<AfterLoginStuff />);
   };
 
