@@ -1,9 +1,9 @@
 .Landing {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 75vh;
     width: 90vw;
-    margin: 3vw 5vw 0vw 5vw;
+    margin: 1.5vh 5vw 1.5vh 5vw;
     border-radius: 15px;
 }
 
@@ -13,12 +13,13 @@
     background-color: #2B2A3C;
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    height: 53vh;
     align-items: center;
     background-image: url('./Group 2Lightbg2.png');
     /* background-clip: ; */
     background-size: cover;
 }
+
 
 .bio1 div {
     padding-left: 5vw;
@@ -27,37 +28,41 @@
     line-height: 19px;
     text-align: justify;
 }
+
 .bio1 div span {
-    color:rgb(214, 118, 118);
+    color: rgb(214, 118, 118);
     padding-right: 5px;
     font-size: 25px;
-   
+
 }
-.bio1 div span:hover{
-    color:rgb(193, 82, 82);
+
+.bio1 div span:hover {
+    color: rgb(193, 82, 82);
 }
+
 .icons {
     width: 80vw;
     margin: auto;
     border-radius: 15px;
     background-color: #020A1C;
-    height: 20vh;
+    height: 17vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-.ic1 img{
+
+.ic1 img {
     transition: transform 0.3s ease;
 }
-.ic1 img:hover{
+
+.ic1 img:hover {
     transform: scale(1.12);
 }
 
 .icons div img {
-    border-radius: 10px;
-    height: 14vh;
-    width: 14vh;
-   
-}
+    /* border-radius: 10px; */
+    height: 11vh;
+    width: 11vh;
 
+}

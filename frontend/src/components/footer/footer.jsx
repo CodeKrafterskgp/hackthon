@@ -8,7 +8,7 @@ const Footer = () => {
       </div>
       <div className="bl1">
         <p id='biofooter1'>
-          Established in 2024. Moto of EaZ My LEarn Platform is to bring all necessary study platform under one roof . Learning Made Simpler.......
+          Established in 2024. Moto of Ez My Learn Platform is to bring all necessary study platform under one roof . Learning Made Simpler.......
         </p>
       </div>
       <div className="bl2">

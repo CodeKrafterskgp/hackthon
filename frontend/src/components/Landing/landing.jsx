@@ -14,10 +14,10 @@ const Landing = () => {
           Ez My Learn 
           </span>
           offers innovative features like YouTube integration, Chat
-          GPT for instant assistance, and Google Meet for virtual classes. With
+          GPT for instant assistance, and Google Meet for virtual classes. <br /> With
           note-taking, multiple chat options, attendance tracking, and a dynamic
           leaderboard, learning becomes engaging. Teachers can organize quizzes
-          and streamline assignment submissions. Join EZ my Learn for
+          and streamline assignment submissions. <br /> Join EZ my Learn for
           accessible, effective, and enjoyable education. Welcome to a new era
           of learning innovation.
         </div>

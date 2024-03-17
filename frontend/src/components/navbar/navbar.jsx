@@ -13,7 +13,7 @@ function Navbar() {
     <div className={`navbar ${isOpen ? 'open' : ''}`}>
       <div className={`TitleOfPlatforms ${isOpen ? 'open' : ''}`}>
         <div id="Before600px" className="TitleOfPlatform">
-          <div id="name1">EaZ</div>
+          <div id="name1">Ez</div>
           <div id="name2">My</div>
           <div id="name3">Learn</div>
         </div>
@@ -39,9 +39,10 @@ function Navbar() {
         <div className={`NavigatingOptions ${isOpen ? 'open' : ''}`}>
           <NavigationItems name="Home" link="/" />
           <NavigationItems name="My-Courses" link="/courses"/>
-          <NavigationItems name="Leaderboard" link="/"/>
+          <NavigationItems name="Leaderboard" link="/leader"/>
           <NavigationItems name="Chat" link="/"/>
           <NavigationItems name="Quiz" link="/"/>
+          <NavigationItems name="Meet" link="https://meet.google.com/"/>
           <NavigationItems name="About-Us" link="/aboutus"/>
         </div>
       </div>
