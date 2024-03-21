@@ -1,17 +1,19 @@
 // import Leader from './components/leader-board/Leader';
-import Login from './components/Login/Login';
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Landing from './components/Landing/landing';
+import Subjects from './components/subjects/subjects';
+import Leader from './components/leader-board/Leader';
+import Chat from './components/chat/Chat';
+import Login from './components/Login/Login';
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
-import Landing from './components/Landing/landing';
 import Aboutus from './components/aboutus/aboutus';
-import Subjects from './components/subjects/subjects';
+
 import CPT from './components/chapters/CPT';
 import BE from './components/chapters/BE';
 import THERMO from './components/chapters/THERMO';
 import AGBT from './components/chapters/ABGT';
-import Leader from './components/leader-board/Leader';
 import AGBT1 from './components/chapters/AGBT/AGBT1';
 import THERMO1 from './components/chapters/THERMO/THERMO1';
 import CPT1 from './components/chapters/CPT/CPT1';
@@ -23,7 +25,6 @@ import BE2 from './components/chapters/BE/BE2';
 import BE3 from './components/chapters/BE/BE3';
 import BE4 from './components/chapters/BE/BE4';
 
-import Chat from './components/chat/Chat';
 
 const App = () => {
   return (
@@ -34,39 +35,38 @@ const App = () => {
 
           <Routes>
             <Route exact path="/" element={<Landing />}></Route>
-
             <Route exact path="/login" element={<Login />}></Route>
-
             <Route exact path="/aboutus" element={<Aboutus />}></Route>
-
             <Route exact path="/courses" element={<Subjects />}></Route>
-            <Route exact path="/leader" element={<Leader/>}></Route>
+            <Route exact path="/leader" element={<Leader />}></Route>
+            <Route exact path="/chats" element={<Chat/>}></Route>
 
-<<<<<<< HEAD
-            <Route exact path="/AGBT" element={<AGBT/>}></Route>
-            <Route exact path="/THERMO" element={<THERMO/>}></Route>
-            <Route exact path="/BE" element={<BE/>}></Route>
-            <Route exact path="/CPT" element={<CPT/>}></Route>
 
-            <Route exact path="/ACH1" element={<AGBT1/>}></Route>
-            <Route exact path="/BCH1" element={<BE1/>}></Route>
-            <Route exact path="/CCH1" element={<CPT1/>}></Route>
-            <Route exact path="/TCH1" element={<THERMO1/>}></Route>
 
-            <Route exact path="/ACH2" element={<AGBT2/>}></Route>
-            <Route exact path="/BCH2" element={<BE2/>}></Route>
-            
-            <Route exact path="/ACH3" element={<AGBT3/>}></Route>
-            <Route exact path="/BCH3" element={<BE3/>}></Route>
-
-            <Route exact path="/ACH4" element={<AGBT4/>}></Route>
-            <Route exact path="/BCH4" element={<BE4/>}></Route>
-=======
             <Route exact path="/AGBT" element={<AGBT />}></Route>
             <Route exact path="/THERMO" element={<THERMO />}></Route>
             <Route exact path="/BE" element={<BE />}></Route>
             <Route exact path="/CPT" element={<CPT />}></Route>
->>>>>>> 8e4d757a3c0e2d29c0f2b72a800fdf0d9d22826f
+
+            <Route exact path="/ACH1" element={<AGBT1 />}></Route>
+            <Route exact path="/BCH1" element={<BE1 />}></Route>
+            <Route exact path="/CCH1" element={<CPT1 />}></Route>
+            <Route exact path="/TCH1" element={<THERMO1 />}></Route>
+
+            <Route exact path="/ACH2" element={<AGBT2 />}></Route>
+            <Route exact path="/BCH2" element={<BE2 />}></Route>
+
+            <Route exact path="/ACH3" element={<AGBT3 />}></Route>
+            <Route exact path="/BCH3" element={<BE3 />}></Route>
+
+            <Route exact path="/ACH4" element={<AGBT4 />}></Route>
+            <Route exact path="/BCH4" element={<BE4 />}></Route>
+
+            <Route exact path="/AGBT" element={<AGBT />}></Route>
+            <Route exact path="/THERMO" element={<THERMO />}></Route>
+            <Route exact path="/BE" element={<BE />}></Route>
+            <Route exact path="/CPT" element={<CPT />}></Route>
+
           </Routes>
 
           <Footer />

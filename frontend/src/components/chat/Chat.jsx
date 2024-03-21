@@ -56,7 +56,6 @@ const Chat = () => {
     <div className="chat-container">
       <div className="chat-messages">
         <ResMsg />
-        <ResMsg />
       </div>
       <div className="chat-input">
         <input type="text" placeholder="Type your message..." id="fileInput" />

@@ -34,7 +34,6 @@ function Navbar() {
     });
   };
 
-  // useEffect(navSetter);
   return (
     <div className={`navbar ${isOpen ? 'open' : ''}`}>
       <div className={`TitleOfPlatforms ${isOpen ? 'open' : ''}`}>
@@ -63,28 +62,21 @@ function Navbar() {
 
       <div className={`Navigation ${isOpen ? 'open' : ''}`}>
         <div className={`NavigatingOptions ${isOpen ? 'open' : ''}`}>
-<<<<<<< HEAD
+
           <NavigationItems name="Home" link="/" />
           <NavigationItems name="My-Courses" link="/courses"/>
           <NavigationItems name="Leaderboard" link="/leader"/>
-          <NavigationItems name="Chat" link="/"/>
+          <NavigationItems name="Chat" link="/chats"/>
           <NavigationItems name="Quiz" link="/"/>
           <NavigationItems name="Meet" link="https://meet.google.com/"/>
           <NavigationItems name="About-Us" link="/aboutus"/>
-=======
-          {diffNav.map((items, k) => (
-            <NavigationItems name={items.name} link={items.r} key={k} />
-          ))}
->>>>>>> 8e4d757a3c0e2d29c0f2b72a800fdf0d9d22826f
+
+        
         </div>
       </div>
 
       <div className={`Searchcontainer ${isOpen ? 'open' : ''}`}>
-        {/* <div className={`SearchBar ${isOpen ? 'open' : ''}`}>
-                    <p>login</p>
-                    <button id='login'></button>
-                </div> */}
-
+       
         <button className={`SearchBar ${isOpen ? 'open' : ''}`}>
           <p>
             <a href="/login" onClick={navSetter}>
